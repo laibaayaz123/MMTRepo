@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lyba">
+    <meta charset="utf-8">
+
+    <meta name="Viewport" content="width=device-width">
+
+    <link href="css/designsbylyba_LAy56623.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+
+    <script src="script/slider.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="head">
+        <a href="index.html">
+            <img src="images/Logo-01.png" alt="Logo" width=150px>
+        </a>
+    </header>
+
+</body>
+<section class="container">
+    <div class="category">
+
+        <div onclick="showimage('logo')">
+            <h2>Logo</h2>
+        </div>
+
+        <div onclick="showimage('banner')">
+            <h2>Banners</h2>
+        </div>
+
+        <div onclick="showimage('shirt')">
+            <h2>T-shirts</h2>
+        </div>
+
+        <div onclick="showimage('illustration')">
+            <h2>Illustrations</h2>
+        </div>
+
+        <div onclick="showimage('card')">
+            <h2>Business Cards</h2>
+        </div>
+
+        <div onclick="showimage('other')">
+            <h2>Others</h2>
+        </div>
+
+    </div>
+
+        <!-- Slideshow container -->
+        <div class="images">
+        <div class="slideshow-container">
+
+              <div id="hide">
+                <img src="images/portfolio-01.png" style="width:100%">
+              </div>
+
+              <div class="Slider fade">
+                <img src="" id="Slider1" style="width:100%">
+              </div>
+
+              <div class="Slider fade">
+                <img src="" id="Slider2" style="width:100%">
+              </div>
+
+              <div class="Slider fade">
+                <img src="" id="Slider3" style="width:100%">
+              </div>
+            
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+</section>
+
+</html>

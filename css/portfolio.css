@@ -1,0 +1,193 @@
+.container
+{
+    display: flex;
+    height: 93%;
+}
+
+.category
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.images
+{
+    flex: 4;
+}
+
+.category>div
+{
+    text-align: center;
+    height: 20%;
+    background-color: rgb(1,45,114);
+    color: white;
+    margin: 2px;
+
+    border-radius: 100px;
+    outline: 3px solid white;
+    outline-offset: -8px;
+}
+
+@font-face
+{
+    font-family: 'canela_deck_triallight';
+    src: url('css/fonts/webfontkit-20221127-160634/caneladeck-light-trial-webfont.woff2') format('woff2'),
+         url('css/fonts/webfontkit-20221127-160634/caneladeck-light-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    color: 002d72;
+}
+
+.category>div>h2
+{
+    font-family: 'canela_deck_triallight';
+    font-weight:100;
+    font-style:normal;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color:white;
+}
+
+.category>div:hover
+{
+    background-color:rgb(238,97,87);
+    cursor: pointer;
+}
+
+/* This Slider code is taken from w3schools.com */
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+.slideshow-container
+{
+  max-width: 80%;
+  position:relative;
+  margin: auto;
+}
+
+.Slider
+{
+  display: none;
+}
+
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  justify-content: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* responsive media css */
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px)
+ {
+    
+    .category>div
+    {
+      font-size:small;
+    }
+    .category
+      {
+        flex:2;
+      }
+    .images
+    {
+        margin-top: 40%;
+    }
+    .prev, .next
+    {
+      font-size: 18px;
+    }
+  
+ }
+ 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px)
+  {
+    .category>div
+    {
+      font-size:small;
+    }
+    .category
+      {
+        flex:1;
+      }
+    .images
+    {
+        margin-top: 15%;
+    }
+    .prev, .next
+    {
+      font-size: 18px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px)
+  {
+    .category>div
+    {
+      font-size:medium;
+    }
+    .category
+      {
+        flex:1;
+      }
+    .images
+    {
+        margin-top: 0%;
+    }
+  } 
+ 
